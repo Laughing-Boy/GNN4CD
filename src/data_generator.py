@@ -66,7 +66,7 @@ class Generator(object):
 
         W_permed = W[perm]
         W_permed = W_permed[:, perm]
-        return W_permed, labels
+        return W_permed, labels  # adjacency matrix and labels
 
 
     def create_dataset(self, directory, is_training):
